@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentín - Portfolio de Analista de Datos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/fW5sGJ66/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="dark-theme">
+    <header class="header" data-header>
+        <div class="container">
+            <h1 class="h1 logo">
+                <a href="#">Valentín<span>.</span></a>
+            </h1>
+
+            <div class="navbar-actions">
+                <select name="language" id="lang">
+                    <option value="en">En</option>
+                    <option value="es" selected>Es</option>
+                </select>
+
+                <button class="theme-btn" aria-label="Cambiar Tema" title="Cambiar Tema" data-theme-btn>
+                    <span class="icon"></span>
+                </button>
+            </div>
+
+            <button class="nav-toggle-btn" aria-label="Alternar Menú" title="Alternar Menú" data-nav-toggle-btn>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="#home" class="navbar-link" tabindex="0">Inicio</a></li>
+                    <li><a href="#about" class="navbar-link" tabindex="0">Sobre mí</a></li>
+                    <li><a href="#skills" class="navbar-link" tabindex="0">Habilidades</a></li>
+                    <li><a href="#portfolio" class="navbar-link" tabindex="0">Portafolio</a></li>
+                    <li><a href="#contact" class="navbar-link" tabindex="0">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+            <section class="hero" id="home">
+                <figure class="hero-banner">
+                    <picture>
+                        <source srcset="output.png" media="(min-width: 768px)">
+                        <source srcset="https://i.postimg.cc/ncZ75fFM/hero-banner-md.png" media="(min-width: 500px)">
+                        <img src="https://i.postimg.cc/2yLvDCqB/hero-banner-sm.png" alt="Data Analyst working" class="w-100">
+                    </picture>
+                </figure>
+
+                <div class="hero-content">
+                    <h2 class="h2 hero-title">Transformando Datos en Decisiones Estratégicas</h2>
+                    <a href="#contact" class="btn btn-primary">Contactar</a>
+                </div>
+
+                <ul class="hero-social-list">
+                    <li>
+                        <a href="https://github.com/ValePadilla11" class="hero-social-link" target="_blank">
+                            <i class="ri-github-fill"></i>
+                            <div class="tooltip">GitHub</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/valentin-jose-padilla-marimon-599aa1330/" class="hero-social-link" target="_blank">
+                            <i class="ri-linkedin-fill"></i>
+                            <div class="tooltip">Linkedin</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.kaggle.com/valentinjoseh" class="hero-social-link" target="_blank">
+                            <i class="ri-kaggle-fill"></i>
+                            <div class="tooltip">Kaggle</div>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#stats" class="scroll-down">Scroll</a>
+            </section>
+
+            <section class="stats" id="stats">
+                <ul class="stats-list">
+                    <li>
+                        <a href="#" class="stats-card">
+                            <div class="card-icon">
+                                <img src="https://i.postimg.cc/x1TWtf69/stats-card-icon-1.png" alt="badge icon">
+                            </div>
+
+                            <h2 class="h2 card-title">5+<strong>Años de Experiencia</strong></h2>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="stats-card">
+                            <div class="card-icon">
+                                <img src="https://i.postimg.cc/q7ByNYBb/stats-card-icon-2.png" alt="checkmark icon">
+                            </div>
+
+                            <h2 class="h2 card-title">50+<strong>Proyectos de Datos</strong></h2>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="stats-card">
+                            <div class="card-icon">
+                                <img src="https://i.postimg.cc/hj6d3tL6/stats-card-icon-3.png" alt="peoples rating icon">
+                            </div>
+
+                            <h2 class="h2 card-title">30+<strong>Clientes Satisfechos</strong></h2>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about-banner">
+                    <img src="output.png" alt="Valentín Padilla, Analista de Datos especializado en transformar datos complejos en insights accionables" class="w-100">
+                </div>
+
+                <div class="about-content section-content">
+                    <p class="section-subtitle">Sobre mí</p>
+                    <h2 class="h2 section-title">¿Necesitas Insights de tus Datos?</h2>
+
+                    <p class="section-text">
+                        Soy Valentín, un analista de datos apasionado por transformar datos complejos en insights accionables. 
+                        Mi experiencia incluye análisis estadístico, visualización de datos, y machine learning. 
+                        He trabajado con grandes volúmenes de datos en diversos sectores, ayudando a empresas a tomar 
+                        decisiones basadas en datos. Mi enfoque combina habilidades técnicas con una fuerte comprensión 
+                        del negocio para entregar soluciones que generan valor real.
+                    </p>
+
+                    <div class="btn-group">
+                        <button class="btn btn-secondary">Descargar CV</button>
+                        <button class="btn btn-primary">Contrátame</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <div class="skills-content section-content">
+                    <p class="section-subtitle">Mis Habilidades</p>
+                    <h2 class="h2 section-title">¿Qué incluyen mis habilidades de Análisis de Datos?</h2>
+                    <p class="section-text">Transformo datos complejos en insights accionables utilizando técnicas avanzadas de análisis y visualización, ayudando a las empresas a tomar decisiones basadas en datos con estas tecnologías.</p>
+
+                    <div class="skills-toggle" data-toggle-box>
+                        <button class="toggle-btn active" data-toggle-btn>Habilidades</button>
+                        <button class="toggle-btn" data-toggle-btn>Herramientas</button>
+                    </div>
+                </div>
+
+                <div class="skills-box" data-skills-box>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Python</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/QCKynLqC/python.png" alt="Python logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">R</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/7PXxRZwN/r.png" alt="R logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">SQL</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/SsYWzLPd/sql.png" alt="SQL logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Pandas</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/mg6V89ZB/pandas.png" alt="Pandas logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">NumPy</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/L8G8rXZC/numpy.png" alt="NumPy logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Scikit-learn</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/QMYhwcLy/scikit.png" alt="Scikit-learn logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">TensorFlow</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/pLMzQrC6/tensorflow.png" alt="TensorFlow logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">PyTorch</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/LsNPMTpc/pytorch.png" alt="PyTorch logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Matplotlib</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/YqYbBJyT/matplotlib.png" alt="Matplotlib logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Seaborn</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/vTHbwrGN/seaborn.png" alt="Seaborn logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Plotly</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/FRKN2brn/plotly.png" alt="Plotly logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Estadística</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/3JwWR1SC/statistics.png" alt="Statistics logo"></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="tools-list">
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Jupyter</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/Kj0qL5V5/jupyter.png" alt="Jupyter logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Power BI</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/RZGWw8KZ/powerbi.png" alt="Power BI logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Tableau</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/3RZ6bhDS/tableau.png" alt="Tableau logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">AWS</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/DZrkVPk5/aws.png" alt="AWS logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Git</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/SRW-dQPXM/git.png" alt="Git logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Docker</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/Y0WxCJYJ/docker.png" alt="Docker logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">VS Code</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/zvXqW9PB/vs-code.png" alt="VS Code logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">PostgreSQL</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/FHJNjbGj/postgresql.png" alt="PostgreSQL logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">MongoDB</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/wjJYtqT2/mongodb.png" alt="MongoDB logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Apache Spark</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/3RfcSVxW/spark.png" alt="Apache Spark logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Hadoop</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/MZ4L1CLF/hadoop.png" alt="Hadoop logo"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skills-card">
+                                <div class="tooltip">Airflow</div>
+                                <div class="card-icon"><img src="https://i.postimg.cc/g0NSjQR4/airflow.png" alt="Airflow logo"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="project" id="portfolio">
+                <div class="project-content section-content">
+                    <p class="section-subtitle">Mis Proyectos</p>
+                    <h2 class="h2 section-title">¡Mira mis proyectos de análisis de datos!</h2>
+
+                    <p class="section-text">
+                        Cada proyecto demuestra mi capacidad para transformar datos en insights valiosos, 
+                        utilizando las mejores prácticas de análisis de datos y visualización.
+                    </p>
+                </div>
+
+                <ul class="project-list">
+                    <li>
+                        <a href="https://github.com/ValePadilla11/analisis-predictivo-ventas" target="_blank" class="project-card">
+                            <figure class="card-banner">
+                                <img src="https://i.postimg.cc/3wL8b6yT/powerbi-dashboard1.png" alt="Dashboard Power BI ventas" class="w-100">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Análisis Predictivo de Ventas</h3>
+                                <p class="card-description">Modelo predictivo para pronosticar ventas futuras utilizando técnicas de machine learning y análisis de series temporales.</p>
+                                <div class="card-tags">
+                                    <span>Python</span>
+                                    <span>Scikit-learn</span>
+                                    <span>Pandas</span>
+                                </div>
+                                <div class="card-link">
+                                    <i class="ri-github-fill"></i> Ver en GitHub
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/ValePadilla11/dashboard-kpis" target="_blank" class="project-card">
+                            <figure class="card-banner">
+                                <img src="https://i.postimg.cc/8z6n6QwB/powerbi-dashboard2.png" alt="Dashboard KPIs Power BI" class="w-100">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Dashboard de KPIs</h3>
+                                <p class="card-description">Dashboard interactivo para visualización de KPIs empresariales con Power BI y análisis de tendencias.</p>
+                                <div class="card-tags">
+                                    <span>Power BI</span>
+                                    <span>DAX</span>
+                                    <span>SQL</span>
+                                </div>
+                                <div class="card-link">
+                                    <i class="ri-github-fill"></i> Ver en GitHub
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/ValePadilla11/clasificacion-clientes" target="_blank" class="project-card">
+                            <figure class="card-banner">
+                                <img src="https://i.postimg.cc/3Jw6n1kB/clustering.png" alt="Clustering clientes" class="w-100">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Clasificación de Clientes</h3>
+                                <p class="card-description">Sistema de segmentación de clientes utilizando algoritmos de clustering y análisis RFM.</p>
+                                <div class="card-tags">
+                                    <span>Python</span>
+                                    <span>Scikit-learn</span>
+                                    <span>Matplotlib</span>
+                                </div>
+                                <div class="card-link">
+                                    <i class="ri-github-fill"></i> Ver en GitHub
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/ValePadilla11/analisis-sentimiento" target="_blank" class="project-card">
+                            <figure class="card-banner">
+                                <img src="https://i.postimg.cc/3wJw6n1kB/nlp.png" alt="NLP análisis de sentimiento" class="w-100">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Análisis de Sentimiento</h3>
+                                <p class="card-description">Análisis de sentimiento de reseñas de productos utilizando procesamiento de lenguaje natural.</p>
+                                <div class="card-tags">
+                                    <span>NLP</span>
+                                    <span>TensorFlow</span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="card-link">
+                                    <i class="ri-github-fill"></i> Ver en GitHub
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/ValePadilla11/forecasting-demanda" target="_blank" class="project-card">
+                            <figure class="card-banner">
+                                <img src="https://i.postimg.cc/3Jw6n1kB/forecasting.png" alt="Forecasting demanda" class="w-100">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Forecasting de Demanda</h3>
+                                <p class="card-description">Modelo predictivo para pronosticar la demanda de productos utilizando series temporales.</p>
+                                <div class="card-tags">
+                                    <span>Python</span>
+                                    <span>Prophet</span>
+                                    <span>ARIMA</span>
+                                </div>
+                                <div class="card-link">
+                                    <i class="ri-github-fill"></i> Ver en GitHub
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/ValePadilla11/analisis-big-data" target="_blank" class="project-card">
+                            <figure class="card-banner">
+                                <img src="https://i.postimg.cc/3Jw6n1kB/bigdata.png" alt="Big Data dashboard" class="w-100">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Análisis de Big Data</h3>
+                                <p class="card-description">Procesamiento y análisis de grandes volúmenes de datos utilizando Apache Spark y AWS.</p>
+                                <div class="card-tags">
+                                    <span>Spark</span>
+                                    <span>AWS</span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="card-link">
+                                    <i class="ri-github-fill"></i> Ver en GitHub
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="load-more">Cargar Más Proyectos</button>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="contact-content section-content">
+                    <p class="section-subtitle">Contacto</p>
+                    <h2 class="h2 section-title">¿Tienes un proyecto de datos? ¡Hablemos!</h2>
+
+                    <p class="section-text">
+                        ¡Contáctame y conversemos sobre cómo puedo ayudarte!
+                    </p>
+                </div>
+
+                <form action="javascript:void(0)" class="contact-form" id="contactForm">
+                    <div class="form-wrapper">
+                        <label for="name" class="form-label">Nombre</label>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="name" id="name" required placeholder="Juan Pérez" class="input-field">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <label for="email" class="form-label">Email</label>
+
+                        <div class="input-wrapper">
+                            <input type="email" name="email" id="email" required placeholder="juan@ejemplo.com" class="input-field">
+                            <ion-icon name="mail"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <label for="phone" class="form-label">Teléfono</label>
+
+                        <div class="input-wrapper">
+                            <input type="tel" name="phone" id="phone" required placeholder="Número de Teléfono" class="input-field">
+                            <ion-icon name="call"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <label for="message" class="form-label">Mensaje</label>
+
+                        <div class="input-wrapper">
+                            <textarea name="message" id="message" class="input-field" required placeholder="Escribe tu Mensaje"></textarea>
+                            <ion-icon name="chatbubbles"></ion-icon>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="h1 logo">
+                <a href="#">Valentín<span>.</span></a>
+            </p>
+
+            <p class="copyright">&copy; 2025 <a href="#" target="_blank">ANALISTA DE DATOS</a>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="#top" class="go-top" data-go-top title="Ir Arriba">
+        <ion-icon name="arrow-up"></ion-icon>
+    </a>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="debug.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
