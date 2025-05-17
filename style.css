@@ -230,15 +230,16 @@ main { overflow-x: hidden; }
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .hero-banner img {
     width: 100%;
     height: auto;
+    max-height: 90vh;
     object-fit: contain;
-    max-height: 80vh;
+    transition: transform 0.3s ease;
 }
 
 :is(.hero-social-list, .scroll-down) { display: none; }
@@ -271,18 +272,17 @@ main { overflow-x: hidden; }
 
 .about { padding-block: var(--section-padding); }
 .about-banner { 
-    max-width: 650px; 
+    max-width: 800px; 
     margin-inline: auto; 
     margin-bottom: 80px; 
 }
 .about-banner img {
-    height: auto;
     width: 100%;
-    border-radius: 15px;
-    box-shadow: var(--shadow-1);
-    transition: transform 0.4s ease;
-    min-height: 400px;
-    object-fit: contain;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: var(--radius-12);
+    transition: transform 0.3s ease;
 }
 .about-banner img:hover {
     transform: scale(1.03);
@@ -344,8 +344,8 @@ main { overflow-x: hidden; }
 .skills-card {
     position: relative;
     background: var(--bg-secondary);
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     display: grid;
     place-items: center;
     border-radius: var(--radius-12);
@@ -354,7 +354,7 @@ main { overflow-x: hidden; }
     transition: var(--transition-1);
 }
     .skills-card:hover { transform: translateY(-5px); }
-    .skills-card img { width: 35px; height: auto; transition: transform 0.3s ease; }
+    .skills-card img { width: 60px; height: auto; transition: transform 0.3s ease; }
     .skills-card:hover img { transform: scale(1.2); }
     .skills-card .tooltip {
         position: absolute;
@@ -421,9 +421,10 @@ main { overflow-x: hidden; }
 
 .card-banner img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
-    transition: transform 0.4s;
+    border-radius: var(--radius-12);
+    transition: transform 0.3s ease;
 }
 
 .project-card:hover .card-banner img {
@@ -666,7 +667,7 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
     .navbar-link::before { height: 2px; }
 
     .hero { position: relative; padding-top: 0; height: 100vh; }
-    .hero-banner { max-width: unset; height: 100%; margin-bottom: 0; }
+    .hero-banner { max-width: 1600px; height: 100%; margin-bottom: 0; }
         .hero img { height: 100%; width: auto; margin-inline: auto; }
     .hero-content { --color-primary: var(--white); position: absolute; top: 50%; filter: drop-shadow(2px 4px 10px var(--black)); }
         .hero .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }
@@ -721,7 +722,7 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
     .container { max-width: 1150px; }
     .section-title { max-width: 460px; }
 
-    .about-banner { max-width: 700px; }
+    .about-banner { max-width: 1000px; }
 
     .project-list {
         grid-template-columns: repeat(3, 1fr);
@@ -794,10 +795,11 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
   }
   
   .card-banner img {
-    transition: transform 0.8s ease;
-    object-fit: cover;
-    height: 200px;
     width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-12);
+    transition: transform 0.3s ease;
   }
   
   .project-card:hover .card-banner img {
@@ -1311,18 +1313,16 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
     }
 
     .skills-card {
-        width: 65px;
-        height: 65px;
+        width: 100px;
+        height: 100px;
     }
 
     .skills-card img {
-        width: 30px;
+        width: 50px;
     }
 
-    .skills-card .tooltip {
-        font-size: 12px;
-        padding: 4px 8px;
-        top: -35px;
+    .card-banner img {
+        height: 250px;
     }
 }
 
@@ -1337,12 +1337,16 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
     }
 
     .skills-card {
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
     }
 
     .skills-card img {
-        width: 25px;
+        width: 45px;
+    }
+
+    .card-banner img {
+        height: 200px;
     }
 }
 
@@ -1364,8 +1368,10 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
 .skills-card {
     position: relative;
     background: var(--bg-secondary);
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+    display: grid;
+    place-items: center;
     border-radius: var(--radius-12);
     box-shadow: var(--shadow-1);
     cursor: help;
@@ -1456,5 +1462,13 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
 
     .card-icon {
         padding: 10px;
+    }
+    .skills-card img {
+        width: 80%;
+    }
+    .skills-card .tooltip {
+        font-size: 10px;
+        padding: 3px 6px;
+        top: -30px;
     }
 }

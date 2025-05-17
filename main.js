@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         en: {
             hero: 'Transforming Data into Strategic Decisions',
             about: 'About me',
+            aboutNav: 'About',
             needInsights: 'Need Data Insights?',
             aboutText: 'I am Valentín, a data analyst passionate about transforming complex data into actionable insights. My experience includes statistical analysis, data visualization, and machine learning. I have worked with large volumes of data across various sectors, helping companies make data-driven decisions. My approach combines technical skills with a strong business understanding to deliver solutions that generate real value.',
             hireMe: 'Hire Me',
@@ -65,11 +66,25 @@ document.addEventListener('DOMContentLoaded', function() {
             portfolioText: 'Each project demonstrates my ability to transform data into valuable insights, using best practices in data analysis and visualization.',
             loadMore: 'Load More Projects',
             contactTitle: 'Have a data project? Let\'s talk!',
-            contactText: 'Contact me and let\'s discuss how I can help you!'
+            contactText: 'Contact me and let\'s discuss how I can help you!',
+            scroll: 'Scroll',
+            home: 'Home',
+            skills: 'Skills',
+            portfolio: 'Portfolio',
+            contact: 'Contact',
+            contactMe: 'Contact Me',
+            featured: 'Featured',
+            viewOnGitHub: 'View on GitHub',
+            yearsExperience: 'Years of Experience',
+            dataProjects: 'Data Projects',
+            satisfiedClients: 'Satisfied Clients',
+            skillsTab: 'Skills',
+            toolsTab: 'Tools'
         },
         es: {
             hero: 'Transformando Datos en Decisiones Estratégicas',
             about: 'Sobre mí',
+            aboutNav: 'Sobre mí',
             needInsights: '¿Necesitas Insights de tus Datos?',
             aboutText: 'Soy Valentín, un analista de datos apasionado por transformar datos complejos en insights accionables. Mi experiencia incluye análisis estadístico, visualización de datos, y machine learning. He trabajado con grandes volúmenes de datos en diversos sectores, ayudando a empresas a tomar decisiones basadas en datos. Mi enfoque combina habilidades técnicas con una fuerte comprensión del negocio para entregar soluciones que generan valor real.',
             hireMe: 'Contrátame',
@@ -88,7 +103,20 @@ document.addEventListener('DOMContentLoaded', function() {
             portfolioText: 'Cada proyecto demuestra mi capacidad para transformar datos en insights valiosos, utilizando las mejores prácticas de análisis de datos y visualización.',
             loadMore: 'Cargar Más Proyectos',
             contactTitle: '¿Tienes un proyecto de datos? ¡Hablemos!',
-            contactText: '¡Contáctame y conversemos sobre cómo puedo ayudarte!'
+            contactText: '¡Contáctame y conversemos sobre cómo puedo ayudarte!',
+            scroll: 'Desplazar',
+            home: 'Inicio',
+            skills: 'Habilidades',
+            portfolio: 'Portafolio',
+            contact: 'Contacto',
+            contactMe: 'Contáctame',
+            featured: 'Destacado',
+            viewOnGitHub: 'Ver en GitHub',
+            yearsExperience: 'Años de Experiencia',
+            dataProjects: 'Proyectos de Datos',
+            satisfiedClients: 'Clientes Satisfechos',
+            skillsTab: 'Habilidades',
+            toolsTab: 'Herramientas'
         }
     };
 
@@ -109,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const elements = {
             '.hero-title': 'hero',
             '.section-subtitle': 'about',
+            '.navbar-link[href="#about"]': 'aboutNav',
             '.section-title': 'needInsights',
             '.section-text': 'aboutText',
             '.about .btn-primary': 'hireMe',
@@ -126,7 +155,20 @@ document.addEventListener('DOMContentLoaded', function() {
             '.project .section-text': 'portfolioText',
             '.load-more': 'loadMore',
             '.contact .section-title': 'contactTitle',
-            '.contact .section-text': 'contactText'
+            '.contact .section-text': 'contactText',
+            '.scroll-down': 'scroll',
+            '.navbar-link[href="#home"]': 'home',
+            '.navbar-link[href="#skills"]': 'skills',
+            '.navbar-link[href="#portfolio"]': 'portfolio',
+            '.navbar-link[href="#contact"]': 'contact',
+            '.hero .btn-primary': 'contactMe',
+            '.project-card.featured::after': 'featured',
+            '.card-link': 'viewOnGitHub',
+            '.stats-card:nth-child(1) .card-title strong': 'yearsExperience',
+            '.stats-card:nth-child(2) .card-title strong': 'dataProjects',
+            '.stats-card:nth-child(3) .card-title strong': 'satisfiedClients',
+            '.toggle-btn:first-child': 'skillsTab',
+            '.toggle-btn:last-child': 'toolsTab'
         };
 
         for (const [selector, key] of Object.entries(elements)) {
