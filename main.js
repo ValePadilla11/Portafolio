@@ -276,11 +276,34 @@ document.addEventListener('DOMContentLoaded', function() {
     for(let i = 0; i < toggleBtns.length; i++){
         toggleBtns[i].addEventListener('click', function(){
             elemToggleFunc(toggleBtnBox);
-
-            for(let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
+            
+            // Ajustar posición y tamaño del toggle según el idioma
+            const btnWidth = this.offsetWidth;
+            const togglePosition = i === 0 ? 5 : toggleBtnBox.offsetWidth - btnWidth - 5;
+            
+            // Aplicar los cambios de estado a los botones
+            for(let j = 0; j < toggleBtns.length; j++) {
+                elemToggleFunc(toggleBtns[j]);
+            }
+            
             elemToggleFunc(skillsBox);
         });
     }
+    
+    // Manejar ajustes del toggle cuando cambia el idioma
+    window.addEventListener('languagechange', function() {
+        // Permitir que el DOM se actualice primero
+        setTimeout(() => {
+            // Ajustar dimensiones si es necesario
+            const activeIndex = toggleBtnBox.classList.contains('active') ? 1 : 0;
+            const activeBtn = toggleBtns[activeIndex];
+            
+            // Si hay cambios significativos en el ancho de los botones, ajustar el CSS
+            if (activeBtn.offsetWidth > 110) {
+                document.documentElement.style.setProperty('--toggle-btn-width', `${activeBtn.offsetWidth + 10}px`);
+            }
+        }, 50);
+    });
 
     // Botón de cargar más proyectos
     const loadMoreBtn = document.querySelector('.load-more');
