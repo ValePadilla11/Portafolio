@@ -313,21 +313,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Manejo del formulario de contacto
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            if(name && email && message) {
-                alert(`¡Gracias por tu mensaje, ${name}! Te contactaré pronto.`);
-                contactForm.reset();
-            } else {
-                alert('Por favor, completa todos los campos requeridos.');
-            }
-        });
-    }
+
+    // Detectar dispositivo y redirigir al hacer clic en el botón de correo
+    document.querySelector('.contact-social-link[href*="mail.google.com"]').addEventListener('click', function (event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); // Detectar dispositivo móvil
+        const email = "valepadi11@gmail.com";
+
+        if (isMobile) {
+            // Redirigir a la aplicación de correo en dispositivos móviles
+            window.location.href = `mailto:${email}`;
+        } else {
+            // Redirigir a Gmail en el navegador en computadoras
+            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, '_blank');
+        }
+    });
 });
